@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../../../Desktop/rocketfront-hybrid",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"],
+      "atoms": ["./src/components/atoms/*"],
+      "molecules": ["./src/components/molecules/*"],
+      "organisms": ["./src/components/organisms/*"],
+      "templates": ["./src/components/templates/*"],
+      "services": ["./src/services/*"],
+      "repositories": ["./src/repositories/*"],
+      "plugins": ["./src/plugins"]
+    }
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}

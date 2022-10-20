@@ -1,0 +1,22 @@
+## Оптимизировано:
+
+- Подключение Repositories и Services переписаны на TypeScript
+
+## Добавлено: А теперь поговорим о том, что нового добавилось:
+
+- Добавлена директория `directives` для кастомных директив
+- Добавлена директива `LazyLoadImage`
+- Добавлен сервис `PropsValidator` в котором находятся методы
+- Rocket Firm UI:
+    - Atoms:
+        - RFBadge
+        - RFButton
+        - RFCheckbox
+        - RFHeading
+        - RFInput
+        - RFLazyImage
+        - RFRadio
+        - RFText
+        - RFToggle
+    - Molecules:
+        - RFSelect

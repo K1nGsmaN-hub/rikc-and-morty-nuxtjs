@@ -1,0 +1,44 @@
+@function rem($pixels, $context: $browser-context) {
+  @return calc($pixels / $context) + rem;
+}
+
+$browser-context: 16;
+
+// fonts
+$f-heading: 'Roboto', arial, sans-serif;
+$f-text: 'Roboto', arial, sans-serif;
+
+// colors
+$c-primary: #43D049;
+$c-text: #5B6975;
+$c-subtle-text: #6E798C;
+$c-background: #ecf1f4;
+$c-error: #FF4345;
+
+// outline
+$outline-shadow: 3px 2px 22px -6px rgba(0, 0, 0, 0.75);
+
+// transitions
+$transition-primary: 0.3s;
+$transition-secondary: 0.2s;
+
+$imgBase: '../images/';
+
+$small: 560px;
+$middle: 760px;
+$tablet: 1000px;
+$laptop: 1170px;
+$desktop: 1300px;
+$wide: 1400px;
+$large: 1800px;
+
+// breakpoints
+$xs: 380px;
+$sm: 560px;
+$smd: 780px;
+$md: 1000px;
+$slg: 1025px;
+$lg: 1285px;
+$xlg: 1370px;
+$xxlg: 1445px;
+$xxxlg: 1925px;
