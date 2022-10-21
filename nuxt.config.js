@@ -23,7 +23,6 @@ export default {
     ],
     link: [{ rel: 'png', type: 'image/png', href: '/icon.png' }],
   },
-  loading: '~/components/atoms/Loader/index.vue',
   srcDir: 'src/',
 
   alias: {
