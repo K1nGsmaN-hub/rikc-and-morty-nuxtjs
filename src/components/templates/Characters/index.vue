@@ -71,10 +71,10 @@ export default Vue.extend({
       }
     },
     async searchCharacter() {
-      setTimeout(await this.$store.dispatch(
-        'characters/searchCharacters',
+      await this.$store.dispatch(
+      'characters/searchCharacters',
         this.searchInput
-      ), 2000)
+      )
     },
   },
 })
