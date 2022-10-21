@@ -3,7 +3,7 @@ import { ICharactersInfo, ICharacters } from "types/DTO/Characters";
 
 export const state = () => ({
   characters: [] as ICharacters[],
-  charactersInfo: [] as ICharactersInfo,
+  charactersInfo: {} as ICharactersInfo,
 })
 
 export type stateT = ReturnType<typeof state>
