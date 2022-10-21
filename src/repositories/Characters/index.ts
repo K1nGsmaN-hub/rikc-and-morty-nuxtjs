@@ -2,7 +2,7 @@ import { IHttpClient } from "services/common/HttpClient";
 
 export interface IRepositoryCharacters {
   fetchCharacters(): Promise<any>
-  searchCharacters(): Promise<any>
+  searchCharacters(name: string): Promise<any>
 }
 
 export default class Characters implements IRepositoryCharacters {
