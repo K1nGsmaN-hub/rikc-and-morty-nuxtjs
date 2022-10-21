@@ -1,17 +1,18 @@
-import { IHttpClient, IHttpResponse } from "services/common/HttpClient";
+import { IHttpClient } from "services/common/HttpClient";
 
 export interface IRepositoryCharacters {
-  fetchCharacters(): Promise<IHttpResponse>
+  fetchCharacters(): Promise<any>
+  searchCharacters(): Promise<any>
 }
 
 export default class Characters implements IRepositoryCharacters {
   constructor(private http: IHttpClient) {}
 
-  async fetchCharacters(): Promise<IHttpResponse> {
+  async fetchCharacters(): Promise<any> {
     return await this.http.get('/character')
   }
 
-  async searchCharacters(name: string): Promise<IHttpResponse> {
+  async searchCharacters(name: string): Promise<any> {
     return await this.http.get(`/character?name=${name}`)
   }
 }
